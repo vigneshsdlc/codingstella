@@ -1,0 +1,134 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    padding: 10px;
+}
+.menu
+{
+    padding: 30px;
+    background-color: navy;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu h2
+{
+    color: #fff;
+    font-family: verdana;
+    font-size: 30px;
+}
+.menu ul
+{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 50%;
+    font-size: 24px;
+    font-weight: bold;
+}
+.menu .search i
+{
+    color: steelblue;
+}
+.menu #xmark,#burger
+{
+    color: #fff;
+}
+.menu #xmark
+{
+    display: none;
+}
+.menu #burger
+{
+    display: none;
+}
+.menu #glass
+{
+    color: #fff;
+    font-size: 24px;
+}
+
+
+.menu .search
+{
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid;
+    display: none;
+}
+.search input
+{
+    border: none;
+    outline: none;
+}
+/*.search input::placeholder
+{
+    color: red;
+}*/
+
+
+.cont1
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url("gun3.jpg");
+    background-size: cover;
+}
+
+@media (max-width: 990px)
+{
+    .menu ul
+    {
+        display: none;
+    }
+    .menu .search
+    {
+        display: block;
+        border-radius: 10px;
+        width: 35%;
+    }
+    .menu .search input
+    {
+        width: 85%;
+        font-size: 20px;
+        padding: 5px 0;
+    }
+    .menu .search i
+    {
+        font-size: 20px;
+    }
+    .menu #xmark
+    {
+        display: block;
+        font-size: 24px;
+    }
+    .menu #glass
+    {
+        display: none;
+    }
+}
+
+
+@media (max-width: 576px)
+{
+    .menu .search
+    {
+        display: none;
+    }
+    .menu #xmark
+    {
+        display: none;
+    }
+    .menu #burger
+    {
+        display: block;
+        font-size: 24px;
+    }
+}
